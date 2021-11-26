@@ -1,0 +1,25 @@
+{
+  "id": "8503af94-4544-479a-b57a-954651f492cd",
+  "name": "Document Approval Workflow",
+  "publisher": "Reliance Infosystems",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 99999
+    }
+  ],
+  "showMyCode": true,
+  "runtime": "7.0"
+}
