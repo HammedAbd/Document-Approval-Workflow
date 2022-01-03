@@ -1,4 +1,4 @@
-table 50001 "REI-Document Approval Entry"
+table 70976576 "REI-Document Approval Entry"
 {
     DrillDownPageID = "REI-Document Approval Entries";
     LookupPageID = "REI-Document Approval Entries";

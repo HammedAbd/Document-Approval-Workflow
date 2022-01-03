@@ -1,4 +1,4 @@
-table 50002 "REI-HR Setup"
+table 70976577 "REI-HR Setup"
 {
 
     fields

@@ -1,4 +1,4 @@
-page 50000 "REI-Document Workflow"
+page 70976577 "REI-Document Workflow"
 {
     PageType = List;
     SourceTable = "REI-Document Workflow";
