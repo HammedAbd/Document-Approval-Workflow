@@ -1,4 +1,4 @@
-table 70976575 "REI-Document Workflow"
+table 50000 "REI-Document Workflow"
 {
 
     fields

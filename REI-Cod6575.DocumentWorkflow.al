@@ -1,4 +1,4 @@
-codeunit 70976576 "REI-Document Approval Workflow"
+codeunit 50000 "REI-Document Approval Workflow"
 {
 
     trigger OnRun()
@@ -6,17 +6,17 @@ codeunit 70976576 "REI-Document Approval Workflow"
     end;
 
     var
-        DocumentWorkflow: Record 70976575;
-        DocumentApprovalEntry: Record 70976576;
-        DocumentApprovalEntry2: Record 70976576;
+        DocumentWorkflow: Record 50000;
+        DocumentApprovalEntry: Record 50001;
+        DocumentApprovalEntry2: Record 50001;
         Text001: Label 'Approval request has been sent.';
         Text002: Label 'The approval cannot be cancelled because it has been treated by your approver.';
         Text003: Label 'Please hold on. This document requires a prior approval.';
-        DocumentApprovalEntry3: Record 70976576;
-        DocumentApprovalEntry4: Record 70976576;
-        DocumentApprovalEntry5: Record 70976576;
-        DocumentApprovalEntry6: Record 70976576;
-        DocumentApprovalEntry7: Record 70976576;
+        DocumentApprovalEntry3: Record 50001;
+        DocumentApprovalEntry4: Record 50001;
+        DocumentApprovalEntry5: Record 50001;
+        DocumentApprovalEntry6: Record 50001;
+        DocumentApprovalEntry7: Record 50001;
         UserSetup: Record 91;
         Text004: Label 'The document has been approved.';
         Text005: Label 'The document has been rejected.';
@@ -56,7 +56,7 @@ codeunit 70976576 "REI-Document Approval Workflow"
         Text016: Label 'Click the following link to view the approved record.';
         Text017: Label 'The document approvals has been reset and the document is reopened.';
         Text018: Label '%1 requires yoururgent payment processingl. Kindly proceed to disburse the payment to the beneficiary on the approved payment requisition page.';
-        HRSetup: Record 70976577;
+        HRSetup: Record 50002;
         UseAnotherMailTemplate: Boolean;
 
     procedure SendApprovalRequest(TableID: Integer;DocNo: Code[10];RecID: RecordID;DocDate: Date;DocAmount: Decimal;DocDesc: Text)
@@ -744,7 +744,7 @@ codeunit 70976576 "REI-Document Approval Workflow"
          MESSAGE(Text017);
     end;
 
-    procedure PendingApprovalEntryExistsForCurrUser(var DocumentApprovalEntry: Record 70976576;RecordID: RecordID): Boolean
+    procedure PendingApprovalEntryExistsForCurrUser(var DocumentApprovalEntry: Record 50001;RecordID: RecordID): Boolean
     begin
         DocumentApprovalEntry.SETRANGE("Table No.",RecordID.TABLENO);
         DocumentApprovalEntry.SETRANGE("Record ID to Approve",RecordID);
@@ -781,7 +781,7 @@ codeunit 70976576 "REI-Document Approval Workflow"
 
     local procedure UseAnotherApprovalNotificationTemplate(TableID: Integer)
     begin
-        IF TableID IN [70976600,50014,50016,50018] THEN
+        IF TableID IN [50001,50013,50014,50016,50018] THEN
           UseAnotherMailTemplate := TRUE
         ELSE
           UseAnotherMailTemplate := FALSE;

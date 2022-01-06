@@ -1,4 +1,4 @@
-tableextension 70976575 "REI-6575.UserSetupExt" extends "User Setup"
+tableextension 50000 "REI-6575.UserSetupExt" extends "User Setup"
 {
     fields
     {
@@ -55,10 +55,6 @@ tableextension 70976575 "REI-6575.UserSetupExt" extends "User Setup"
             Editable = true;
         }
         field(70976585; "Fin/Acc Officer"; Boolean)
-        {
-            Editable = true;
-        }
-        field(70976586; "Salary Setup"; Boolean)
         {
             Editable = true;
         }

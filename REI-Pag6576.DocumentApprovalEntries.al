@@ -1,4 +1,4 @@
-page 70976576 "REI-Document Approval Entries"
+page 50001 "REI-Document Approval Entries"
 {
     Editable = false;
     PageType = List;
